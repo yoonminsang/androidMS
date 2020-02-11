@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExerciseRoutine_5x5_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text="5x5"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="무분할, 주3일"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 목적 : 스트렝스 증가\n
+주요운동 : 스쿼트, 벤치프레스, 데드리프트, 바벨로우, 오버헤드프레스\n
+장점 : 스트렝스 훈련중 가장 대중적이고 검증된 운동법\n
+추천하는 사람 : 3대를 높이고 싶은 사람, 순발력있는 몸을 원하는 사람\n
+비추천하는 사람 : 자극을 위하는 사람, 근비대를 위하는 사람"/>
+
+            <Button
+                android:id="@+id/bt_ex_5x5_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:padding="15dp"
+            android:background="@drawable/round_square_white"
+            android:gravity="left"
+            android:text="월요일\n주요운동 : 스쿼트, 벤치프레스, 펜들레이로우, 풀업\n운동수 : 4개\n세트수 : 18세트\n추정시간 : 60분" />
+
+            <Button
+                android:id="@+id/bt_ex_5x5_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/round_square_white"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="수요일\n주요운동 : 데드리프트, 오버헤드프레스, 스쿼트\n운동수 : 3개\n세트수 : 15세트\n추정시간 : 60분" />
+
+            <Button
+                android:id="@+id/bt_ex_5x5_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/round_square_white"
+                android:gravity="left"
+                android:padding="15dp"
+                android:text="금요일\n주요운동 : 스쿼트, 벤치프레스, 펜들레이로우, 친업\n운동수 : 4개\n세트수 : 18세트\n추정시간 : 60분" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

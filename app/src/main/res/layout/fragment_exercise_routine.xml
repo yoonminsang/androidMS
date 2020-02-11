@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".Fragment.ExerciseRoutineFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="운동루틴"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_margin="10dp"
+                    android:text="스트렝스 루틴"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bt_5x5"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/i5x5"
+                    android:text="5x5" />
+
+                <Button
+                    android:id="@+id/bt_10x3"
+                    android:layout_width="200dp"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_height="150dp"
+                    android:background="@drawable/i10x3"
+                    android:text="10x3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+
+                    android:layout_margin="10dp"
+                    android:text="고볼륨 루틴"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bt_GVT"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/igvt"
+                    android:text="GVT" />
+
+                <Button
+                    android:id="@+id/bt_8x8"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="200dp"
+                    android:background="@drawable/i8x8"
+                    android:layout_height="150dp"
+                    android:text="8x8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_margin="10dp"
+                    android:text="밸런스 루틴"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bt_3x10"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/i3x10"
+                    android:text="3x10" />
+
+                <Button
+                    android:id="@+id/bt_5x10"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/i5x10"
+                    android:text="5x10"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.ProfileFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="프로필"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_inbody"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#00ff0000"
+        android:drawableLeft="@drawable/i_inbody"
+        android:paddingLeft="10dp"
+        android:text="인바디"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bt_competency"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#00ff0000"
+        android:drawableLeft="@drawable/i_competency"
+        android:paddingLeft="10dp"
+        android:text="수행능력"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bt_album"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#00ff0000"
+        android:drawableLeft="@drawable/i_album"
+        android:paddingLeft="10dp"
+        android:text="앨범"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bt_inbody_album"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#00ff0000"
+        android:drawableLeft="@drawable/i_inbodyalbum"
+        android:paddingLeft="10dp"
+        android:text="인바디앨범"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bt_point"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#00ff0000"
+        android:drawableLeft="@drawable/i_point"
+        android:paddingLeft="10dp"
+        android:text="포인트"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bt_information"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#00ff0000"
+        android:drawableLeft="@drawable/i_information"
+        android:paddingLeft="10dp"
+        android:text="내정보"
+        android:textSize="15dp" />
+
+</LinearLayout>
