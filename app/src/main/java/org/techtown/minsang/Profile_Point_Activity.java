@@ -54,7 +54,6 @@ public class Profile_Point_Activity extends AppCompatActivity {
         int nowPoint = 0;
         int lastPoint = 0;
 
-
         long now = System.currentTimeMillis();
         Date date = new Date(now);
         SimpleDateFormat nowYear = new SimpleDateFormat("yyyy", Locale.KOREAN);
@@ -69,7 +68,10 @@ public class Profile_Point_Activity extends AppCompatActivity {
             Type type = new TypeToken<ArrayList<CalendarData>>() {
             }.getType();
             arrayList = gson.fromJson(json, type);
-            if (arrayList != null) {
+            if (arrayList == null) {
+                arrayList=new ArrayList<>();
+            }
+            if(arrayList.size()>0){
                 nowPoint++;
             }
         }
@@ -89,7 +91,10 @@ public class Profile_Point_Activity extends AppCompatActivity {
             Type type = new TypeToken<ArrayList<CalendarData>>() {
             }.getType();
             arrayList = gson.fromJson(json, type);
-            if (arrayList != null) {
+            if (arrayList == null) {
+                arrayList = new ArrayList<>();
+            }
+            if(arrayList.size()>0){
                 lastPoint++;
             }
         }
@@ -151,7 +156,10 @@ public class Profile_Point_Activity extends AppCompatActivity {
                     Type type = new TypeToken<ArrayList<CalendarData>>() {
                     }.getType();
                     arrayList = gson.fromJson(json, type);
-                    if (arrayList != null) {
+                    if (arrayList == null) {
+                        arrayList=new ArrayList<>();
+                    }
+                    if(arrayList.size()>0){
                         allPoint++;
                     }
                 }
